@@ -1,1 +1,91 @@
 echo "<!DOCTYPE html>..." > index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In & Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f8f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        h1 {
+            margin-bottom: 1rem;
+            color: #2a9d8f;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 0.75rem;
+            margin: 0.5rem 0;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .sign-in {
+            background-color: #2a9d8f;
+            color: #fff;
+        }
+        .sign-up {
+            background-color: #fff;
+            color: #2a9d8f;
+            border: 2px solid #2a9d8f;
+        }
+        .divider {
+            margin: 1.5rem 0;
+            color: #aaa;
+            position: relative;
+        }
+        .divider::before, .divider::after {
+            content: "";
+            display: block;
+            height: 1px;
+            background-color: #ddd;
+            position: absolute;
+            width: 40%;
+            top: 50%;
+        }
+        .divider::before {
+            left: 0;
+        }
+        .divider::after {
+            right: 0;
+        }
+        .social-buttons img {
+            width: 30px;
+            margin: 0 0.5rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Fresh Harvest</h1>
+        <button class="button sign-in">Sign In</button>
+        <button class="button sign-up">Sign Up</button>
+
+        <div class="divider">Or continue with</div>
+
+        <div class="social-buttons">
+            <img src="google-icon.png" alt="Google">
+            <img src="facebook-icon.png" alt="Facebook">
+            <img src="apple-icon.png" alt="Apple">
+        </div>
+    </div>
+</body>
+</html>
